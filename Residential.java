@@ -1,6 +1,11 @@
 /**
- * 
- */
+* Describing the residential occupancy group subgrouping from Building
+*
+* @author Hannes Nilsson
+* @version 1.0
+* Construction_HN
+* CS131ON
+*/
 public class Residential extends Building{
 
 	protected int numBedrooms;
@@ -24,6 +29,48 @@ public class Residential extends Building{
 		this.laundryRoom = laundryRoom;
 
 	}//end preferred constructor
+	
+	/**
+	 * @return the numBedrooms
+	 */
+	public int getNumBedrooms() {
+		return numBedrooms;
+	}//end getNumBedrooms
+
+	/**
+	 * @param numBedrooms the numBedrooms to set
+	 */
+	public void setNumBedrooms(int numBedrooms) {
+		this.numBedrooms = numBedrooms;
+	}//end setNumBedrooms
+
+	/**
+	 * @return the numBathrooms
+	 */
+	public int getNumBathrooms() {
+		return numBathrooms;
+	}//end getNumBathrooms
+
+	/**
+	 * @param numBathrooms the numBathrooms to set
+	 */
+	public void setNumBathrooms(int numBathrooms) {
+		this.numBathrooms = numBathrooms;
+	}//end setNumBathrooms
+
+	/**
+	 * @return the laundryRoom
+	 */
+	public boolean isLaundryRoom() {
+		return laundryRoom;
+	}//end isLaundryRoom
+
+	/**
+	 * @param laundryRoom the laundryRoom to set
+	 */
+	public void setLaundryRoom(boolean laundryRoom) {
+		this.laundryRoom = laundryRoom;
+	}//end setLaundryRoom
 
 	@Override
 	public String toString() {

@@ -7,8 +7,6 @@
 * CS131ON
 */
 
-import java.util.*;
-
 public class Building {
 
 	/**
@@ -58,7 +56,31 @@ public class Building {
 		this.occupancyGroup = occupancyGroup;
 		this.subgroup = subgroup;
 	}//end preferred constructor
-
+	
+	/**
+	 * Will eventually be used to draw the object to the screen. Temporary functionality prints "Drawing code for Building" to the console
+	 */
+	public void draw() {
+		System.out.println("Drawing code for Building");
+	}//end draw
+	
+	/**
+	 * @return Formatted table displaying relevant information about current object type as described in the fields.
+	 */
+	public String displayData() {
+		
+		StringBuilder sb = new StringBuilder("----------------------------\n");
+		sb.append("Building\n");
+		sb.append("----------------------------\n");
+		sb.append("Project Name: "+getProjectName()+"\n");
+		sb.append("Address: "+getCompleteAddress()+"\n");
+		sb.append("Square Feet: "+getTotalSquareFeet()+"\n");
+		sb.append("Occupancy Group: "+getOccupancyGroup()+"\n");
+		sb.append("Occupancy Subgroup: "+getSubgroup()+"\n");
+		
+		return sb.toString();
+	}//end displayData
+	
 	/**
 	 * @return the projectName
 	 */
@@ -128,30 +150,6 @@ public class Building {
 	public void setSubgroup(String subgroup) {
 		this.subgroup = subgroup;
 	}//end setSubgroup
-	
-	/**
-	 * Will eventually be used to draw the object to the screen. Temporary functionality prints "Drawing code for Building" to the console
-	 */
-	public void draw() {
-		System.out.println("Drawing code for Building");
-	}//end draw
-	
-	/**
-	 * @return Formatted table displaying relevant information about current object type as described in the fields.
-	 */
-	public String displayData() {
-		
-		StringBuilder sb = new StringBuilder("----------------------------\n");
-		sb.append("Building\n");
-		sb.append("----------------------------\n");
-		sb.append("Project Name: "+getProjectName()+"\n");
-		sb.append("Address: "+getCompleteAddress()+"\n");
-		sb.append("Square Feet: "+getTotalSquareFeet()+"\n");
-		sb.append("Occupancy Group: "+getOccupancyGroup()+"\n");
-		sb.append("Occupancy Subgroup: "+getSubgroup()+"\n");
-		
-		return sb.toString();
-	}//end displayData
 
 	/**
 	 *  
