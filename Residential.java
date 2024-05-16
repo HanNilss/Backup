@@ -12,6 +12,9 @@ public class Residential extends Building{
 	protected int numBathrooms;
 	protected boolean laundryRoom;
 	
+	/**
+	 * Constructs Residential object with default values for instance variables
+	 */
 	public Residential() {
 		super();
 		
@@ -21,6 +24,18 @@ public class Residential extends Building{
 
 	}//end empty-argument constructor
 	
+	/**
+	 * Constructs Residential object with values for instance variables passed in as arguments
+	 * 
+	 * @param projectName
+	 * @param completeAddress
+	 * @param totalSquareFeet
+	 * @param occupancyGroup
+	 * @param subgroup
+	 * @param numBedrooms
+	 * @param numBathrooms
+	 * @param laundryRoom
+	 */
 	public Residential(String projectName, String completeAddress, double totalSquareFeet, String occupancyGroup, String subgroup, int numBedrooms, int numBathrooms, boolean laundryRoom) {
 		
 		super(projectName, completeAddress, totalSquareFeet, occupancyGroup, subgroup);

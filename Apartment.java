@@ -133,6 +133,13 @@ public class Apartment extends Residential{
 	public void setParkingAvailable(boolean parkingAvailable) {
 		this.parkingAvailable = parkingAvailable;
 	}//end setParkingAvailable
-	
-	
+
+	@Override
+	public String toString() {
+		return "Apartment [numRentableUnits=" + numRentableUnits + ", avgUnitSize=" + avgUnitSize
+				+ ", parkingAvailable=" + parkingAvailable + ", numBedrooms=" + numBedrooms + ", numBathrooms="
+				+ numBathrooms + ", laundryRoom=" + laundryRoom + ", projectName=" + projectName + ", completeAddress="
+				+ completeAddress + ", totalSquareFeet=" + totalSquareFeet + ", occupancyGroup=" + occupancyGroup
+				+ ", subgroup=" + subgroup + "]";
+	}//end toString
 }//end class

@@ -20,7 +20,7 @@ public class Business extends Building{
 	public Business() {
 		super();
 		 this.numRentableUnits = 0;
-	}//end empty-argument  constructor
+	}//end empty-argument constructor
 
 	/**
 	 * Constructs Business object with values for instance variables passed in as arguments
@@ -52,7 +52,12 @@ public class Business extends Building{
 	public void setNumRentableUnits(int numRentableUnits) {
 		this.numRentableUnits = numRentableUnits;
 	}//end setNumRentableUnits
-	
-	
+
+	@Override
+	public String toString() {
+		return "Business [numRentableUnits=" + numRentableUnits + ", projectName=" + projectName + ", completeAddress="
+				+ completeAddress + ", totalSquareFeet=" + totalSquareFeet + ", occupancyGroup=" + occupancyGroup
+				+ ", subgroup=" + subgroup + "]";
+	}//end toString
 	
 }//end class

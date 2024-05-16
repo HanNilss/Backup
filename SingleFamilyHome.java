@@ -100,7 +100,10 @@ public class SingleFamilyHome extends Residential{
 
 	@Override
 	public String toString() {
-		return "SingleFamilyHome [garage=" + garage + "]";
-	}
+		return "SingleFamilyHome [garage=" + garage + ", numBedrooms=" + numBedrooms + ", numBathrooms=" + numBathrooms
+				+ ", laundryRoom=" + laundryRoom + ", projectName=" + projectName + ", completeAddress="
+				+ completeAddress + ", totalSquareFeet=" + totalSquareFeet + ", occupancyGroup=" + occupancyGroup
+				+ ", subgroup=" + subgroup + "]";
+	}//end toString
 	
 }//end class

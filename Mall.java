@@ -45,10 +45,10 @@ public class Mall extends Business {
 	}//end preferred constructor
 	
 	/**
-	 * Will eventually be used to draw the object to the screen. Temporary functionality prints "Drawing code for Residential" to the console
+	 * Will eventually be used to draw the object to the screen. Temporary functionality prints "Drawing code for Mall" to the console
 	 */
 	public void draw() {
-		System.out.println("Drawing code for Residential");
+		System.out.println("Drawing code for Mall");
 	}//end draw
 	
 	/**
@@ -113,11 +113,13 @@ public class Mall extends Business {
 	public void setNumParkingSpaces(int numParkingSpaces) {
 		this.numParkingSpaces = numParkingSpaces;
 	}//end setNumParkingSpaces
-	
+
 	@Override
 	public String toString() {
 		return "Mall [numRentedUnits=" + numRentedUnits + ", medianUnitSize=" + medianUnitSize + ", numParkingSpaces="
-				+ numParkingSpaces + "]";
+				+ numParkingSpaces + ", numRentableUnits=" + numRentableUnits + ", projectName=" + projectName
+				+ ", completeAddress=" + completeAddress + ", totalSquareFeet=" + totalSquareFeet + ", occupancyGroup="
+				+ occupancyGroup + ", subgroup=" + subgroup + "]";
 	}//end toString
 	
 }//end class
